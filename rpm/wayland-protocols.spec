@@ -1,7 +1,7 @@
 Name:       wayland-protocols
 
 Summary:    Wayland protocols that adds functionality not available in the core protocol
-Version:    1.14.0
+Version:    1.17.0
 Release:    1
 Group:      System/Libraries
 License:    MIT

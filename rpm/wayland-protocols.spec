@@ -1,12 +1,13 @@
 Name:       wayland-protocols
 
 Summary:    Wayland protocols that adds functionality not available in the core protocol
-Version:    1.20.0
+Version:    1.21.0
 Release:    1
 License:    MIT
 URL:        http://wayland.freedesktop.org/
 Source0:    wayland-protocols-%{version}.tar.xz
 BuildArch:     noarch
+BuildRequires: meson
 BuildRequires: pkgconfig(wayland-scanner)
 
 %description
@@ -30,11 +31,12 @@ wayland-protocols.
 %autosetup -n %{name}-%{version}/wayland-protocols
 
 %build
-%reconfigure
-%make_build
+%meson
+
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 %files devel
 %defattr(-,root,root,-)

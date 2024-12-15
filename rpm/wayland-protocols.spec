@@ -1,7 +1,7 @@
 Name:       wayland-protocols
 
 Summary:    Wayland protocols that adds functionality not available in the core protocol
-Version:    1.36.0
+Version:    1.38.0
 Release:    1
 License:    MIT
 URL:        http://wayland.freedesktop.org/
@@ -39,8 +39,8 @@ wayland-protocols.
 %meson_install
 
 %files devel
-%defattr(-,root,root,-)
 %license COPYING
 %doc README.md
 %{_datadir}/pkgconfig/%{name}.pc
 %{_datadir}/%{name}/
+%{_includedir}/%{name}/
